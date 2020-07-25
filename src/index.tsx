@@ -13,6 +13,9 @@ import './theme/global.css';
 
 const client = new ApolloClient({
   uri: process.env.REACT_APP_API_URL,
+  fetchOptions: {
+    mode: 'no-cors',
+  },
 });
 
 function App() {
